@@ -1,7 +1,7 @@
 # Warsztaty React
 ## Instrukcja przygotowania środowiska
-### Windows
-Ściągnij najnowszą wersję node.js z oficjalnej strony: https://nodejs.org/ i następnie zainstaluj ją używając domyślnej konfiguracji. Po zainstalowaniu zrestartuj swój komputer.
+### Windows/OSX
+Ściągnij najnowszą wersję instalatora node.js z oficjalnej strony: https://nodejs.org/ i następnie zainstaluj ją używając domyślnej konfiguracji. Po zainstalowaniu zrestartuj swój komputer.
 
 ### Linux
 #### Debian/Ubuntu
