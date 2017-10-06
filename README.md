@@ -1,10 +1,13 @@
 # Warsztaty React
-## Instrukcja przygotowania środowiska
-### Windows/OSX
+## Wymagane narzędzia
+* git - https://git-scm.com/
+* npm
+### Instrukcja instalacji npm
+#### Windows/OSX
 Ściągnij najnowszą wersję instalatora node.js z oficjalnej strony: https://nodejs.org/ i następnie zainstaluj ją używając domyślnej konfiguracji. Po zainstalowaniu zrestartuj swój komputer.
 
-### Linux
-#### Debian/Ubuntu
+#### Linux
+##### Debian/Ubuntu
 Otwórz terminal i wpisz poniższe polecenia: 
 
 ```bash
@@ -13,7 +16,7 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 ```
 
-### Weryfikacja poprawności installacji
+#### Weryfikacja poprawności installacji
 
 Wpisz poniższe polecenie w oknie terminala:
 
@@ -21,7 +24,7 @@ Wpisz poniższe polecenie w oknie terminala:
 npm --version
 ```
 
-Powinno to spowodować wypisaniem wersji w postaci np:
+Powinno to spowodować wypisanie wersji w postaci np:
 
 ```bash
 5.3.0
