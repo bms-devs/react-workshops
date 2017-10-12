@@ -2,6 +2,8 @@
 ## Wymagane narzędzia
 * git - https://git-scm.com/
 * npm
+* Ulubiony edytor kodu, najlepiej IntelliJ IDEA / Webstorm (30-dniowa darmowa wersja próbna do pobrania na https://www.jetbrains.com/webstorm/)
+
 ### Instrukcja instalacji npm
 #### Windows/OSX
 Ściągnij najnowszą wersję instalatora node.js z oficjalnej strony: https://nodejs.org/ i następnie zainstaluj ją używając domyślnej konfiguracji. Po zainstalowaniu zrestartuj swój komputer.
