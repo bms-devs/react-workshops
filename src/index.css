@@ -30,3 +30,7 @@ p {
   width: 70%;
   float: right;
 }
+
+.bold {
+  font-weight: bold;
+}

@@ -40,7 +40,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <List images={this.images} />
+                <List images={this.images} activeIndex={this.state.index} />
                 <Viewer imageUrl={this.images[this.state.index]}
                         previousDisabled={this.getPreviousIndex() < 0}
                         nextDisabled={this.getNextIndex() >= this.images.length}
