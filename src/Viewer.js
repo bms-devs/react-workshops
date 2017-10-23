@@ -4,7 +4,7 @@ export default class Viewer extends Component {
 
     render() {
         return (
-            <div>
+            <div className="main-view">
                 <img className="viewer" src={this.props.imageUrl} />
                 <div className="button-wrapper">
                     <button disabled={this.props.previousDisabled}

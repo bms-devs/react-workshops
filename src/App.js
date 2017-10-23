@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './App.css'
 import Viewer from './Viewer'
+import List from './List'
 
 class App extends Component {
 
@@ -39,6 +40,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <List images={this.images} />
                 <Viewer imageUrl={this.images[this.state.index]}
                         previousDisabled={this.getPreviousIndex() < 0}
                         nextDisabled={this.getNextIndex() >= this.images.length}
