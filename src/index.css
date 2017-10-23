@@ -9,3 +9,7 @@ body {
   height: 400px;
   margin: 100px auto;
 }
+
+.button-wrapper {
+  width: 100%;
+}

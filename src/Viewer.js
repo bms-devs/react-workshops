@@ -5,11 +5,13 @@ export default class Viewer extends Component {
     render() {
         return (
             <div>
-                <div className="viewer" style={{backgroundColor: this.props.color}} />
-                <button disabled={this.props.previousDisabled}
-                onClick={this.props.onPreviousClick}>Previous</button>
-                <button disabled={this.props.nextDisabled}
-                        onClick={this.props.onNextClick}>Next</button>
+                <img className="viewer" src={this.props.imageUrl} />
+                <div className="button-wrapper">
+                    <button disabled={this.props.previousDisabled}
+                    onClick={this.props.onPreviousClick}>Previous</button>
+                    <button disabled={this.props.nextDisabled}
+                            onClick={this.props.onNextClick}>Next</button>
+                </div>
             </div>
         )
     }

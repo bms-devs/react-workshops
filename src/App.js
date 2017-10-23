@@ -6,12 +6,10 @@ class App extends Component {
 
     constructor() {
         super()
-        this.colors = [
-            "red",
-            "green",
-            "blue",
-            "black",
-            "yellow"
+        this.images = [
+            "http://bms.com.pl/wordpress/wp-content/themes/bms/dist/images/bms_logo_main.svg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+            "https://blog.zingchart.com/content/images/2016/06/react.png"
         ]
         this.state = {
             index: 0
@@ -41,9 +39,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Viewer color={this.colors[this.state.index]}
+                <Viewer imageUrl={this.images[this.state.index]}
                         previousDisabled={this.getPreviousIndex() < 0}
-                        nextDisabled={this.getNextIndex() >= this.colors.length}
+                        nextDisabled={this.getNextIndex() >= this.images.length}
                         onPreviousClick={() => this.handlePreviousClick()}
                         onNextClick={() => this.handleNextClick()} />
             </div>
