@@ -37,10 +37,16 @@ class App extends Component {
         })
     }
 
+    handleListElementClick(index) {
+        this.setState({
+            index: index
+        })
+    }
+
     render() {
         return (
             <div className="App">
-                <List images={this.images} activeIndex={this.state.index} />
+                <List onElementClick={i => this.handleListElementClick(i)} images={this.images} activeIndex={this.state.index} />
                 <Viewer imageUrl={this.images[this.state.index]}
                         previousDisabled={this.getPreviousIndex() < 0}
                         nextDisabled={this.getNextIndex() >= this.images.length}

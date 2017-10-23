@@ -13,7 +13,7 @@ export default class List extends Component {
     render() {
         const images = this.props.images
             .map((url, index) =>
-                <img src={url} className={this.getMiniatureClass(index)} />)
+                <img key={index} onClick={() => this.props.onElementClick(index)} src={url} className={this.getMiniatureClass(index)} />)
 
         return (
             <div className="sidenav">
