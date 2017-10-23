@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './App.css'
+import Viewer from './Viewer'
 
 class App extends Component {
 
@@ -40,11 +41,11 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="viewer" style={{backgroundColor: this.colors[this.state.index]}} />
-                <button disabled={this.getPreviousIndex() < 0}
-                        onClick={() => this.handlePreviousClick()}>Previous</button>
-                <button disabled={this.getNextIndex() >= this.colors.length}
-                        onClick={() => this.handleNextClick()}>Next</button>
+                <Viewer color={this.colors[this.state.index]}
+                        previousDisabled={this.getPreviousIndex() < 0}
+                        nextDisabled={this.getNextIndex() >= this.colors.length}
+                        onPreviousClick={() => this.handlePreviousClick()}
+                        onNextClick={() => this.handleNextClick()} />
             </div>
         )
     }
