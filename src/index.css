@@ -34,3 +34,22 @@ p {
 .bold {
   font-weight: bold;
 }
+
+.miniature {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.active {
+  border: 3px solid blue;
+}
+
+.miniatures-wrapper {
+  width: 103px;
+  margin: auto
+}
+
+body {
+  padding-right: 20%;
+}
