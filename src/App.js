@@ -17,9 +17,13 @@ class App extends Component {
         }
     }
 
+    getNextIndex() {
+        return this.state.index + 1
+    }
+
     handleNextClick() {
         this.setState({
-            index: this.state.index + 1
+            index: this.getNextIndex()
         })
     }
 
@@ -27,7 +31,8 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="viewer" style={{backgroundColor: this.colors[this.state.index]}} />
-                <button onClick={() => this.handleNextClick()}>Next</button>
+                <button disabled={this.getNextIndex() >= this.colors.length}
+                        onClick={() => this.handleNextClick()}>Next</button>
             </div>
         )
     }
