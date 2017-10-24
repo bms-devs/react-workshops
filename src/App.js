@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Viewer from './Viewer'
 
 class App extends Component {
 
@@ -30,15 +31,12 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <div className="viewer" style={{ backgroundColor: this.colors[this.state.index] }} />
-        <button onClick={() => this.handlePrevClick()}
-                disabled={this.state.index === 0} >
-          Poprzedni
-        </button>
-        <button onClick={() => this.handleNextClick()}
-                disabled={(this.state.index + 1) === this.colors.length} >
-          Następny
-        </button>
+        <Viewer onNextClick={() => this.handleNextClick()}
+                onPrevClick={() => this.handlePrevClick()}
+                color={this.colors[this.state.index]}
+                nextDisabled={(this.state.index + 1) === this.colors.length}
+                prevDisabled={this.state.index === 0}
+        />
       </div>
     );
   }
