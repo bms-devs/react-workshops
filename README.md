@@ -31,3 +31,18 @@ Powinno to spowodować wypisanie wersji w postaci np:
 ```bash
 5.3.0
 ```
+
+## Kroki
+### Inicjalizacja repozytorium oraz szablon aplikacji
+
+Aby sklonować repozytorium wpisz w konsoli poniższe polecenie:
+
+```bash
+git clone git@github.com:bms-devs/react-workshops.git
+```
+a następnie przejdź do pierwszego kroku zawierającego szablon aplikacji:
+
+```bash
+git checkout step-1
+```
+
