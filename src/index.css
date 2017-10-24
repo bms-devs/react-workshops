@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 0 20% 0 0;
+}
+
+.app {
+  text-align: center;
+}
+
+.viewer {
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+}
+
+.button-wrapper {
+  width: 100%;
+}
+
+.sidenav {
+  margin-top: 200px;
+  width: 30%;
+  white-space: nowrap;
+  float: left;
+}
+
+p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.main-view {
+  width: 70%;
+  float: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.miniature {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.active {
+  border: 3px solid blue;
+}
+
+.miniatures-wrapper {
+  width: 103px;
+  margin: auto
+}
