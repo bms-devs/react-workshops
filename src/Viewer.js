@@ -4,8 +4,8 @@ class Viewer extends Component {
 
     render() {
         return (
-            <div>
-                <div className="viewer" style={{backgroundColor: this.props.color}} />
+            <div className="main-view">
+                <div className="viewer"><img className="viewer" src={this.props.image} /></div>
                 <button onClick={() => this.props.onPrevClick()}
                         disabled={this.props.prevDisabled}>
                     Poprzedni
