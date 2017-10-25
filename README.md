@@ -40,9 +40,12 @@ Aby sklonować repozytorium wpisz w konsoli poniższe polecenie:
 ```bash
 git clone git@github.com:bms-devs/react-workshops.git
 ```
-a następnie przejdź do pierwszego kroku zawierającego szablon aplikacji:
+
+Warsztaty będą podzielone na kroki, aby umożliwić szybkie przeskoczenie do statu aplikacji z konkretnego kroku stworzyliśmy branche dla każdego z nich. Przejście do kroku wykonasz poleceniem:
 
 ```bash
-git checkout step-1
+git checkout step-{numer_kroku}
 ```
+
+gdzie w miejsce {numer_kroku} należy podać numer kroku, do którego chcemy przeskoczyć.
 
