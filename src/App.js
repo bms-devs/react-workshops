@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Viewer from './Viewer'
+import List from './List'
 
 class App extends Component {
 
@@ -30,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <List images={this.images} />
         <Viewer onNextClick={() => this.handleNextClick()}
                 onPrevClick={() => this.handlePrevClick()}
                 image={this.images[this.state.index]}
